@@ -34,11 +34,11 @@ To add a curated package to the directory:
 
 ---
 
-## Adding a Project
+## Adding an Open-Source Project
 
 To showcase an open-source Flutter project:
 
-1. Click here to edit [projects.md](https://github.com/ProFlutterDev/proflutterdev/edit/main/projects.md) directly on GitHub.
+1. Click here to edit [open-source.md](https://github.com/ProFlutterDev/proflutterdev/edit/main/open-source.md) directly on GitHub.
 2. Add a new row to the table at the bottom of the file in the following format:
    ```markdown
    | <Project Name> | <GitHub Link> | <Short Description> | <Comma-separated Categories (Optional)> |
@@ -48,7 +48,7 @@ To showcase an open-source Flutter project:
    | AppFlowy | https://github.com/AppFlowy-IO/AppFlowy | An open-source alternative to Notion, built with Flutter and Rust... | Desktop, Productivity, Rust |
    ```
 
-### Important Project Guidelines
+### Important Guidelines
 * **Description**: Write a concise, 1-2 sentence description explaining what the project is and key libraries used.
 * **Suggested Categories**:
   * `Mobile`
