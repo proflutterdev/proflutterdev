@@ -20,7 +20,7 @@ To add a curated package to the directory:
 
 ### Important Package Guidelines
 * **Automated Details**: You only need to supply the name, pub.dev link, and categories. The build system will automatically fetch the description and GitHub repository links directly from the pub.dev API during build.
-* **Allowed Categories**:
+* **Suggested Categories**:
   * `State Management`
   * `Code Generation`
   * `Networking & HTTP`
@@ -50,7 +50,7 @@ To showcase an open-source Flutter project:
 
 ### Important Project Guidelines
 * **Description**: Write a concise, 1-2 sentence description explaining what the project is and key libraries used.
-* **Allowed Categories**:
+* **Suggested Categories**:
   * `Mobile`
   * `Desktop`
   * `Web`
