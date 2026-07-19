@@ -1,0 +1,16 @@
+- state-management
+- code-generation
+- networking-&-http
+- databases-&-storage
+- ui-components
+- navigation
+- testing
+- device-features
+- utilities
+- localization-&-internationalization
+- analytics-&-crash-reporting
+- authentication-&-security
+- animations
+- image-&-media-processing
+- background-processing
+- monetization-&-ads
