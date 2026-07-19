@@ -11,26 +11,17 @@ To add a curated package to the directory:
 1. Click here to edit [packages.md](https://github.com/ProFlutterDev/proflutterdev/edit/main/packages.md) directly on GitHub.
 2. Add a new row to the table at the bottom of the file in the following format:
    ```markdown
-   | <Package Name> | <Pub.dev Link> | <Comma-separated Categories> |
+   | <Package Name> | <Pub.dev Link> | <Category Link> |
    ```
 3. **Example**:
    ```markdown
-   | flutter_riverpod | https://pub.dev/packages/flutter_riverpod | State Management |
+   | flutter_riverpod | https://pub.dev/packages/flutter_riverpod | https://proflutterdev.com/packages/?category=state-management |
    ```
 
 ### Important Package Guidelines
-* **Automated Details**: You only need to supply the name, pub.dev link, and categories. The build system will automatically fetch the description and GitHub repository links directly from the pub.dev API during build.
-* **Suggested Categories**:
-  * `State Management`
-  * `Code Generation`
-  * `Networking & HTTP`
-  * `Databases & Storage`
-  * `UI Components`
-  * `Navigation`
-  * `Testing`
-  * `Device Features`
-  * `Utilities`
-  * *Note: The system automatically fuzzy-matches and normalizes variations (e.g. mapping `state` or `state-management` to `State Management`).*
+* **Category Link Format**: In the Category column, specify the filter link format (e.g. `https://proflutterdev.com/packages/?category=state-management`). Use lowercase and replace spaces with hyphens for the query parameter.
+* **Adding New Categories**: If you want to use a category that doesn't exist yet, add its slug (e.g. `state-management`) to [`categories.md`](./categories.md). The website dynamically normalizes these slugs to display names (e.g. `State Management`).
+* **Automated Details**: You only need to supply the name, pub.dev link, and category link. The build system will automatically fetch the description and GitHub repository links directly from the pub.dev API during build.
 
 ---
 
