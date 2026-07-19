@@ -32,7 +32,3 @@ We welcome contributions of all kinds! Whether you are fixing a typo, recommendi
 * **Write an Article**: Create a new markdown file under [`articles/`](./articles/) using standard frontmatter structure.
 
 ---
-
-## 📜 License
-
-By contributing to this repository, you agree that your contributions will be licensed under the MIT License.
