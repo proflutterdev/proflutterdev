@@ -1,6 +1,6 @@
 # 🚀 ProFlutterDev Content Hub
 
-Welcome to the public content repository for **[ProFlutterDev](https://proflutter.dev)** a curated, documentation-style knowledge hub designed for professional Flutter developers.
+Welcome to the public content repository for **[ProFlutterDev](https://proflutterdev.com)** a curated, documentation-style knowledge hub designed for professional Flutter developers.
 
 This repository houses the open-source community content, including vetted packages, developer-submitted projects, and advanced technical articles. If you would like to share your knowledge, showcase an open-source project, or list a high-quality package, you are in the right place!
 
