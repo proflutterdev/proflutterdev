@@ -30,5 +30,3 @@ We welcome contributions of all kinds! Whether you are fixing a typo, recommendi
 * **Add a Package**: Update the table in [`packages.md`](./packages.md) directly.
 * **Add an Open-Source Project**: Add your app details in [`open-source.md`](./open-source.md).
 * **Write an Article**: Create a new markdown file under [`articles/`](./articles/) using standard frontmatter structure.
-
----
