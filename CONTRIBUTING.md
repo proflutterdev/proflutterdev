@@ -23,33 +23,4 @@ To add a curated package to the directory:
 * **Adding New Categories**: If you want to use a category that doesn't exist yet, add its slug (e.g. `state-management`) to [`categories.md`](./categories.md). The website dynamically normalizes these slugs to display names (e.g. `State Management`).
 * **Automated Details**: You only need to supply the name, pub.dev link, and category link. The build system will automatically fetch the description and GitHub repository links directly from the pub.dev API during build.
 
----
 
-## Adding an Open-Source Project
-
-To showcase an open-source Flutter project:
-
-1. Click here to edit [open-source.md](https://github.com/ProFlutterDev/proflutterdev/edit/main/open-source.md) directly on GitHub.
-2. Add a new row to the table at the bottom of the file in the following format:
-   ```markdown
-   | <Project Name> | <GitHub Link> | <Short Description> | <Comma-separated Categories (Optional)> |
-   ```
-3. **Example**:
-   ```markdown
-   | AppFlowy | https://github.com/AppFlowy-IO/AppFlowy | An open-source alternative to Notion, built with Flutter and Rust... | Desktop, Productivity, Rust |
-   ```
-
-### Important Guidelines
-* **Description**: Write a concise, 1-2 sentence description explaining what the project is and key libraries used.
-* **Suggested Categories**:
-  * `Mobile`
-  * `Desktop`
-  * `Web`
-  * `Productivity`
-  * `Developer Tools`
-  * `Social`
-  * `Finance`
-  * `Games`
-  * `Education`
-  * `UI Components`
-  * `Rust`
