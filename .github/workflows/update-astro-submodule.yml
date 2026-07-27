@@ -1,34 +1,58 @@
-name: Update Astro Submodule
+name: Update Astro Submodule (Manual & Verified)
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch: # Manual trigger only
 
 jobs:
-  update-submodule:
+  validate-and-update:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Content repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # Step 1: Content Sanity & Safety Check
+      - name: Run Content Sanity & Vulgarity Checks
+        run: node scripts/validate-content.js
+
+      # Step 2: Checkout Astro project
       - name: Checkout Astro repository
         uses: actions/checkout@v4
         with:
           repository: 'ProFlutterDev/proflutterdev-astro'
           token: ${{ secrets.SUBMODULE_UPDATE_TOKEN }}
+          path: astro-project
           submodules: true
           fetch-depth: 0
 
-      - name: Update content submodule to latest main
+      # Step 3: Update submodule to latest content commit
+      - name: Update submodule ref to latest commit
         run: |
+          cd astro-project
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git submodule update --remote --merge content
 
-      - name: Commit and push changes if updated
+      # Step 4: Dry-run Astro Build to ensure website doesn't break
+      - name: Install dependencies & Test Astro Build
         run: |
+          cd astro-project
+          npm ci
+          npm run build
+
+      # Step 5: Commit & push ONLY IF sanity checks and build succeeded
+      - name: Push updated submodule reference to Astro repo
+        run: |
+          cd astro-project
           if [[ -n $(git status --porcelain content) ]]; then
             git add content
-            git commit -m "chore(content): update content submodule to latest commit"
+            git commit -m "chore(content): update content submodule to latest verified commit"
             git push origin main
+            echo "✅ Submodule updated and pushed to Astro project!"
           else
-            echo "No submodule changes to commit."
+            echo "ℹ️ No submodule changes to push."
           fi
