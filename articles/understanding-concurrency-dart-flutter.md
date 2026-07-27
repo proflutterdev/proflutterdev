@@ -2,7 +2,7 @@
 title: "Understanding Concurrency in Dart and Flutter"
 description: "A deep dive into isolates, event loops, and the asynchronous programming model in Dart."
 slug: "understanding-concurrency-dart-flutter"
-author: "RajnishOne"
+author: "Rajnish Sharma"
 date: 2026-07-27
 tags: ["Architecture","Performance"]
 readingTime: "5 min read"
