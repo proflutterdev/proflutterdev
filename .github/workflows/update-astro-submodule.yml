@@ -1,0 +1,34 @@
+name: Update Astro Submodule
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-submodule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Astro repository
+        uses: actions/checkout@v4
+        with:
+          repository: 'ProFlutterDev/proflutterdev-astro'
+          token: ${{ secrets.SUBMODULE_UPDATE_TOKEN }}
+          submodules: true
+          fetch-depth: 0
+
+      - name: Update content submodule to latest main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git submodule update --remote --merge content
+
+      - name: Commit and push changes if updated
+        run: |
+          if [[ -n $(git status --porcelain content) ]]; then
+            git add content
+            git commit -m "chore(content): update content submodule to latest commit"
+            git push origin main
+          else
+            echo "No submodule changes to commit."
+          fi
