@@ -23,3 +23,4 @@
 | lottie | https://pub.dev/packages/lottie | https://proflutterdev.com/packages/?category=animations |
 | workmanager | https://pub.dev/packages/workmanager | https://proflutterdev.com/packages/?category=background-processing |
 | google_mobile_ads | https://pub.dev/packages/google_mobile_ads | https://proflutterdev.com/packages/?category=monetization-and-ads |
+| admob_flutter | https://pub.dev/packages/admob_flutter | https://proflutterdev.com/packages/?category=monetization-and-ads |
