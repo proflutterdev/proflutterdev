@@ -24,3 +24,4 @@
 | workmanager | https://pub.dev/packages/workmanager | https://proflutterdev.com/packages/?category=background-processing |
 | google_mobile_ads | https://pub.dev/packages/google_mobile_ads | https://proflutterdev.com/packages/?category=monetization-and-ads |
 | app_tracking_transparency | https://pub.dev/packages/app_tracking_transparency | https://proflutterdev.com/packages/?category=monetization-and-ads |
+| admob_flutter | https://pub.dev/packages/admob_flutter | https://proflutterdev.com/packages/?category=monetization-and-ads |
