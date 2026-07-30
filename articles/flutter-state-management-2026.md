@@ -106,7 +106,7 @@ class UserProfileBloc extends Bloc<UserProfileEvent, UserProfileState> {
 
 ## 2. Riverpod: The Declarative Caching Framework
 
-Riverpod is not just a state management tool—it is a complete asynchronous caching and dependency injection engine. It does not rely on the Flutter widget tree to lookup providers, removing common `ProviderNotFoundException` issues.
+Riverpod is not just a state management tool - it is a complete asynchronous caching and dependency injection engine. It does not rely on the Flutter widget tree to lookup providers, removing common `ProviderNotFoundException` issues.
 
 In 2026, the community heavily utilizes `riverpod_generator` to auto-generate providers, ensuring type safety and reducing manual code.
 
